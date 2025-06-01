@@ -8,8 +8,7 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('https://images.unsplash.com/photo-1581090700227-1e8a9816e7bf?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
-      background-size: cover;
+      background-color: #f4f6fa;
       color: #0f172a;
     }
     nav {
@@ -18,7 +17,7 @@
       left: 0;
       height: 100vh;
       width: 60px;
-      background-color: rgba(30, 58, 138, 0.95);
+      background-color: #1e3a8a;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -36,25 +35,69 @@
     nav a:hover {
       color: #38bdf8;
     }
-    .overlay {
-      background-color: rgba(255, 255, 255, 0.85);
+    .main {
       margin-left: 60px;
-      padding: 4rem 2rem 2rem 2rem;
+      display: flex;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+      background: url('https://cdn.pixabay.com/photo/2016/11/29/01/14/ux-1869281_1280.jpg') no-repeat center center;
+      background-size: cover;
+      text-align: center;
+      color: #f8fafc;
     }
-    header { text-align: center; margin-top: 2rem; }
-    header h1 { font-size: 3rem; color: #1e3a8a; }
-    header p { font-size: 1.3rem; margin-top: 0.5rem; color: #334155; }
-    .social-links { display: flex; justify-content: center; gap: 1.5rem; margin-top: 1rem; }
-    .social-links a { color: #1e3a8a; font-size: 1.2rem; text-decoration: none; transition: color 0.3s; }
-    .social-links a:hover { color: #2563eb; }
-    section { max-width: 900px; margin: 3rem auto; background-color: #f1f5f9; border-radius: 10px; padding: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); scroll-margin-top: 80px; }
-    h2 { font-size: 2rem; margin-bottom: 1rem; color: #1e3a8a; }
-    .card { background-color: #ffffff; padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem; border-left: 6px solid #1e3a8a; }
-    footer { text-align: center; padding: 2rem 1rem; color: #475569; }
+    .main-content {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 3rem;
+      border-radius: 10px;
+    }
+    .main-content h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .main-content p {
+      font-size: 1.2rem;
+    }
+    .overlay {
+      padding: 4rem 2rem 2rem 80px;
+    }
+    section {
+      max-width: 900px;
+      margin: 3rem auto;
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      scroll-margin-top: 80px;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #1e3a8a;
+    }
+    .card {
+      background-color: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      border-left: 6px solid #1e3a8a;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #475569;
+    }
     a { color: #1e3a8a; }
-    form input, form textarea { width: 100%; padding: 0.75rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 6px; }
-    form button { background-color: #1e3a8a; color: white; padding: 0.75rem 1.5rem; border: none; border-radius: 6px; cursor: pointer; }
-    form button:hover { background-color: #2563eb; }
+    form input, form textarea {
+      width: 100%; padding: 0.75rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 6px;
+    }
+    form button {
+      background-color: #1e3a8a; color: white; padding: 0.75rem 1.5rem;
+      border: none; border-radius: 6px; cursor: pointer;
+    }
+    form button:hover {
+      background-color: #2563eb;
+    }
   </style>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
@@ -66,17 +109,15 @@
     <a href="#servicos" title="Serviços"><i class="fas fa-cogs"></i></a>
     <a href="#contato" title="Contato"><i class="fas fa-envelope"></i></a>
   </nav>
-  <div class="overlay">
-    <header>
-      <h1>Lucas Padilha</h1>
-      <p>Especialista em Análise de Dados | Especialista em Análise de TI</p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/lucas-padilha-gonçalves-5a1992237/" target="_blank">LinkedIn</a>
-        <a href="curriculo.pdf" target="_blank">Currículo</a>
-        <a href="https://wa.me/5517991541134" target="_blank">WhatsApp</a>
-      </div>
-    </header>
 
+  <div class="main">
+    <div class="main-content">
+      <h1>Lucas Padilha</h1>
+      <p>Especialista em Análise de Dados | Analista de TI</p>
+    </div>
+  </div>
+
+  <div class="overlay">
     <section id="sobre">
       <h2>Sobre Mim</h2>
       <div class="card">
