@@ -8,8 +8,8 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f6fa;
-      color: #0f172a;
+      background-color: #f9fafb;
+      color: #111827;
     }
     nav {
       position: fixed;
@@ -17,12 +17,11 @@
       left: 0;
       height: 100vh;
       width: 60px;
-      background-color: #1e3a8a;
+      background-color: #1f2937;
       display: flex;
       flex-direction: column;
       align-items: center;
       padding-top: 1rem;
-      z-index: 1000;
     }
     nav a {
       display: block;
@@ -30,10 +29,9 @@
       color: #ffffff;
       text-decoration: none;
       font-size: 1.5rem;
-      transition: color 0.3s;
     }
     nav a:hover {
-      color: #38bdf8;
+      color: #9ca3af;
     }
     .main {
       margin-left: 60px;
@@ -41,15 +39,11 @@
       height: 100vh;
       align-items: center;
       justify-content: center;
-      background: url('https://cdn.pixabay.com/photo/2016/11/29/01/14/ux-1869281_1280.jpg') no-repeat center center;
-      background-size: cover;
+      background-color: #e5e7eb;
       text-align: center;
-      color: #f8fafc;
     }
     .main-content {
-      background-color: rgba(0, 0, 0, 0.6);
       padding: 3rem;
-      border-radius: 10px;
     }
     .main-content h1 {
       font-size: 3rem;
@@ -64,39 +58,45 @@
     section {
       max-width: 900px;
       margin: 3rem auto;
-      background-color: #ffffff;
-      border-radius: 10px;
-      padding: 2rem;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      scroll-margin-top: 80px;
+      padding: 0 1rem;
     }
     h2 {
       font-size: 2rem;
       margin-bottom: 1rem;
-      color: #1e3a8a;
+      color: #111827;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 0.5rem;
     }
-    .card {
-      background-color: #f1f5f9;
-      padding: 1.5rem;
-      border-radius: 8px;
-      margin-bottom: 1.5rem;
-      border-left: 6px solid #1e3a8a;
+    .sobre-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+    .sobre-container img {
+      width: 200px;
+      border-radius: 10px;
+    }
+    ul {
+      list-style: disc;
+      padding-left: 1.5rem;
     }
     footer {
       text-align: center;
       padding: 2rem 1rem;
-      color: #475569;
+      color: #6b7280;
     }
-    a { color: #1e3a8a; }
+    a { color: #1f2937; text-decoration: none; }
+    a:hover { text-decoration: underline; }
     form input, form textarea {
-      width: 100%; padding: 0.75rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 6px;
+      width: 100%; padding: 0.75rem; margin-bottom: 1rem; border: 1px solid #d1d5db; border-radius: 6px;
     }
     form button {
-      background-color: #1e3a8a; color: white; padding: 0.75rem 1.5rem;
+      background-color: #1f2937; color: white; padding: 0.75rem 1.5rem;
       border: none; border-radius: 6px; cursor: pointer;
     }
     form button:hover {
-      background-color: #2563eb;
+      background-color: #374151;
     }
   </style>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
@@ -120,71 +120,73 @@
 
   <div class="overlay">
     <section id="sobre">
-  <h2>Sobre Mim</h2>
-  <div class="card">
-    <p>Sou <strong>Especialista em Análise de Dados</strong> com experiência em suporte técnico, manutenção de hardware e software, bancos de dados (MySQL, Oracle, SQL Server), e sistemas ERP. Domino a criação de relatórios com <strong>Crystal Reports XI</strong> e <strong>Power BI</strong>, e tenho sólida atuação em redes, servidores e infraestrutura. Também atuo com automação de processos e visualizações avançadas de dados para gerar insights estratégicos e otimizar operações.</p>
-    <p>Além disso, tenho experiência em <strong>monitoramento de redes com Zabbix e Grafana</strong>, e desenvolvimento de painéis interativos usando Power BI e DAX. Sou proativo, focado na melhoria de processos e na experiência do usuário, com atuação prática em Active Directory, telefonia e pacote Office. Minha formação em Engenharia da Computação fortalece ainda mais minha base técnica e lógica.</p>
-  </div>
-</section>
-
-    <section id="resumo">
-  <h2>Resumo</h2>
-  <div class="card">
-    <ul>
-      <li><strong>Power BI</strong> (dashboards, DAX, relatórios interativos)</li>
-      <li><strong>Crystal Reports XI</strong> (relatórios personalizados)</li>
-      <li><strong>SQL Server / MySQL / Oracle</strong> (administração e modelagem)</li>
-      <li><strong>n8n, Spark, Zabbix, Grafana</strong> (monitoramento e automações)</li>
-      <li><strong>Active Directory</strong>, servidores e infraestrutura</li>
-      <li><strong>Suporte técnico</strong> a usuários e sistemas ERP</li>
-      <li><strong>HTML, lógica de programação e redes</strong></li>
-    </ul>
-  </div>
-</section>
-
-    <section id="portfolio">
-      <h2>Portfólio</h2>
-      <div class="card">
-        <h3>Dashboard de Gestão de Vendas</h3>
-        <img src="https://via.placeholder.com/800x400?text=Dashboard+de+Vendas" alt="Dashboard Vendas" style="width:100%; border-radius:6px; margin: 1rem 0;">
-        <p>Desenvolvido em Power BI, oferece visão completa sobre faturamento, lucro, movimentação de produtos e ranking de lojas.</p>
-      </div>
-      <div class="card">
-        <h3>Automação de Relatórios de Indicadores</h3>
-        <img src="https://via.placeholder.com/800x400?text=Relat%C3%B3rios+Automatizados" alt="Automação Relatórios" style="width:100%; border-radius:6px; margin: 1rem 0;">
-        <p>Uso de Python e Power BI para geração automatizada de relatórios semanais com envio por e-mail.</p>
+      <h2>Sobre Mim</h2>
+      <div class="sobre-container">
+        <img src="473297405_2899175486905919_7196750505444973053_n.jpg" alt="Foto de Lucas Padilha">
+        <div>
+          <p>Sou <strong>Especialista em Análise de Dados</strong> com experiência em suporte técnico, manutenção de hardware e software, bancos de dados (MySQL, Oracle, SQL Server), e sistemas ERP. Domino a criação de relatórios com <strong>Crystal Reports XI</strong> e <strong>Power BI</strong>, e tenho sólida atuação em redes, servidores e infraestrutura. Também atuo com automação de processos e visualizações avançadas de dados para gerar insights estratégicos e otimizar operações.</p>
+          <p>Tenho experiência com <strong>monitoramento de redes usando Zabbix e Grafana</strong>, e desenvolvimento de painéis com Power BI. Minha formação em Engenharia da Computação complementa meu perfil técnico e estratégico para a área de TI.</p>
+        </div>
       </div>
     </section>
 
+    <section id="resumo">
+      <h2>Resumo</h2>
+      <ul>
+        <li>Power BI (dashboards, DAX, relatórios interativos)</li>
+        <li>Crystal Reports XI (relatórios personalizados)</li>
+        <li>SQL Server / MySQL / Oracle (administração e modelagem)</li>
+        <li>n8n, Spark, Zabbix, Grafana</li>
+        <li>Active Directory, redes e infraestrutura</li>
+        <li>Suporte técnico a usuários e sistemas ERP</li>
+        <li>HTML, lógica de programação e automação</li>
+      </ul>
+    </section>
+
+    <section id="portfolio">
+  <h2>Portfólio</h2>
+  <p>Confira abaixo alguns projetos e soluções que desenvolvi com foco em dados, automação e visualização.</p>
+  <div>
+    <h3>Dashboard de Gestão de Vendas</h3>
+    <img src="Screenshot_5.png" alt="Dashboard de Vendas" style="width:100%; max-width:900px; border-radius: 8px; margin: 1rem 0;">
+    <p>Painel desenvolvido em Power BI com indicadores de faturamento, comissões, produtos vendidos e ticket médio, além de filtros dinâmicos por período, filial e forma de pagamento.</p>
+  </div>
+  <div>
+    <h3>Análise de Vendas - Lucro e Custo</h3>
+    <img src="dd.jpg" alt="Análise de Vendas" style="width:100%; max-width:900px; border-radius: 8px; margin: 1rem 0;">
+    <p>Dashboard detalhado de vendas com acompanhamento de valores, categorias mais vendidas e lucro por item. Desenvolvido em Power BI com base em movimentações de loja.</p>
+  </div>
+  <div>
+    <h3>Gestão Financeira</h3>
+    <img src="Gestão Financeira.png" alt="Gestão Financeira" style="width:100%; max-width:900px; border-radius: 8px; margin: 1rem 0;">
+    <p>Projeto voltado à gestão de entradas e saídas, com classificação de despesas e status de movimentações. Desenvolvido para oferecer uma visão clara de receita, saldo e lucro acumulado.</p>
+  </div>
+</section>
+
     <section id="servicos">
       <h2>Serviços</h2>
-      <div class="card">
-        <h3>Análise de Dados</h3>
-        <p>Criação de dashboards, painéis de controle e indicadores. Extração de insights a partir de bases de dados complexas. Automatização de relatórios e visualizações.</p>
-      </div>
-      <div class="card">
-        <h3>Análise de Sistemas</h3>
-        <p>Levantamento de requisitos, mapeamento de processos, documentação de sistemas, suporte técnico e integração de soluções com foco em gestão pública.</p>
-      </div>
+      <ul>
+        <li><strong>Análise de Dados:</strong> construção de dashboards, indicadores e análise de performance de negócios.</li>
+        <li><strong>Suporte Técnico:</strong> resolução de problemas, manutenção de equipamentos, capacitação e implantação.</li>
+        <li><strong>Automação:</strong> processos automatizados com Python, SQL e ferramentas de integração.</li>
+      </ul>
     </section>
 
     <section id="contato">
       <h2>Contato</h2>
-      <div class="card">
-        <p>Email: <a href="mailto:lucas@email.com">lucas@email.com</a></p>
-        <p>Telefone: (17) 99154-1134</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/lucas-padilha-gonçalves-5a1992237/" target="_blank">Perfil</a></p>
-        <form action="mailto:lucas@email.com" method="POST" enctype="text/plain">
-          <input type="text" name="nome" placeholder="Seu nome" required>
-          <input type="email" name="email" placeholder="Seu email" required>
-          <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
-          <button type="submit">Enviar Mensagem</button>
-        </form>
-      </div>
+      <p>Email: <a href="mailto:ti.lucaspmendonca@gmail.com">ti.lucaspmendonca@gmail.com</a></p>
+      <p>Telefone: (17) 99154-1134</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/lucas-padilha-gonçalves-5a1992237/" target="_blank">Perfil</a></p>
+      <form action="mailto:ti.lucaspmendonca@gmail.com" method="POST" enctype="text/plain">
+        <input type="text" name="nome" placeholder="Seu nome" required>
+        <input type="email" name="email" placeholder="Seu email" required>
+        <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar Mensagem</button>
+      </form>
     </section>
 
     <footer>
-      <p>© 2025 Lucas Padilha · <a href="mailto:lucas@email.com">lucas@email.com</a></p>
+      <p>© 2025 Lucas Padilha · <a href="mailto:ti.lucaspmendonca@gmail.com">ti.lucaspmendonca@gmail.com</a></p>
     </footer>
   </div>
 </body>
