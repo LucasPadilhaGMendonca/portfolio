@@ -12,115 +12,118 @@
     }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0f172a;
-      color: #f8fafc;
-      line-height: 1.6;
+      background: url('https://images.unsplash.com/photo-1581090700227-1e8a9816e7bf?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #0f172a;
+    }
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.85);
+      min-height: 100vh;
+      padding: 2rem;
     }
     header {
-      background: linear-gradient(90deg, #1e3a8a, #2563eb);
-      padding: 3rem 1rem;
       text-align: center;
+      margin-top: 4rem;
     }
     header h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
+      color: #1e3a8a;
     }
     header p {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       margin-top: 0.5rem;
-      color: #cbd5e1;
-    }
-    section {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 1rem;
-    }
-    h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-      color: #38bdf8;
-    }
-    .card {
-      background-color: #1e293b;
-      padding: 1rem;
-      border-radius: 8px;
-      margin-bottom: 1rem;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-    }
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      background-color: #0f172a;
-      color: #64748b;
-    }
-    a {
-      color: #60a5fa;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
+      color: #334155;
     }
     .social-links {
       display: flex;
       justify-content: center;
-      gap: 2rem;
+      gap: 1.5rem;
       margin-top: 1rem;
     }
     .social-links a {
-      color: #f8fafc;
-      font-weight: bold;
-      background-color: #1e40af;
-      padding: 0.5rem 1rem;
-      border-radius: 6px;
-      transition: background-color 0.3s;
+      color: #1e3a8a;
+      font-size: 1.2rem;
+      text-decoration: none;
+      transition: color 0.3s;
     }
     .social-links a:hover {
-      background-color: #2563eb;
+      color: #2563eb;
+    }
+    section {
+      max-width: 900px;
+      margin: 3rem auto;
+      background-color: #f1f5f9;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #1e3a8a;
+    }
+    .card {
+      background-color: #ffffff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      border-left: 6px solid #1e3a8a;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #475569;
+    }
+    a {
+      color: #1e3a8a;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Lucas Padilha</h1>
-    <p>Especialista em Análise de Dados | Especialista em Análise de TI</p>
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/seu-perfil" target="_blank">LinkedIn</a>
-      <a href="curriculo.pdf" target="_blank">Currículo</a>
-      <a href="https://wa.me/5511999999999" target="_blank">WhatsApp</a>
-    </div>
-  </header>
+  <div class="overlay">
+    <header>
+      <h1>Lucas Padilha</h1>
+      <p>Especialista em Análise de Dados | Especialista em Análise de TI</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/lucas-padilha-gonçalves-5a1992237/" target="_blank">LinkedIn</a>
+        <a href="curriculo.pdf" target="_blank">Currículo</a>
+        <a href="https://wa.me/5517991541134" target="_blank">WhatsApp</a>
+      </div>
+    </header>
 
-  <section>
-    <h2>Sobre Mim</h2>
-    <div class="card">
-      <p>Sou um profissional apaixonado por transformar dados em insights estratégicos. Tenho experiência sólida com ferramentas de BI, modelagem de dados, ETL, Power BI, SQL e automações de processos de TI. Gosto de resolver problemas e trazer soluções inteligentes para as equipes e empresas com as quais colaboro.</p>
-    </div>
+    <section>
+      <h2>Sobre Mim</h2>
+      <div class="card">
+        <p>Sou um profissional apaixonado por transformar dados em insights estratégicos. Tenho experiência sólida com ferramentas de BI, modelagem de dados, ETL, Power BI, SQL e automações de processos de TI. Gosto de resolver problemas e trazer soluções inteligentes para as equipes e empresas com as quais colaboro.</p>
+      </div>
 
-    <h2>Habilidades Técnicas</h2>
-    <div class="card">
-      <ul>
-        <li>Power BI / Tableau</li>
-        <li>SQL / PostgreSQL</li>
-        <li>Python para análise de dados</li>
-        <li>Excel avançado</li>
-        <li>ETL (Power Query, Pentaho)</li>
-        <li>Automação de processos (Python, VBA)</li>
-        <li>Sistemas de Gestão Pública e Jurídica</li>
-      </ul>
-    </div>
+      <h2>Habilidades Técnicas</h2>
+      <div class="card">
+        <ul>
+          <li>Power BI / Crystal Reports</li>
+          <li>SQL / Mysql</li>
+          <li>Python para análise de dados</li>
+          <li>Excel avançado</li>
+          <li>ETL (Power Query, Pentaho)</li>
+          <li>Automação de processos (Python, VBA)</li>
+          <li>Sistemas de Gestão Pública e Jurídica</li>
+        </ul>
+      </div>
 
-    <h2>Projetos em Destaque</h2>
-    <div class="card">
-      <h3>Dashboard de Gestão de Vendas</h3>
-      <p>Desenvolvido em Power BI, oferece visão completa sobre faturamento, lucro, movimentação de produtos e ranking de lojas.</p>
-    </div>
-    <div class="card">
-      <h3>Automação de Relatórios de Indicadores</h3>
-      <p>Uso de Python e Power BI para geração automatizada de relatórios semanais com envio por e-mail.</p>
-    </div>
-  </section>
+      <h2>Projetos em Destaque</h2>
+      <div class="card">
+        <h3>Dashboard de Gestão de Vendas</h3>
+        <p>Desenvolvido em Power BI, oferece visão completa sobre faturamento, lucro, movimentação de produtos e ranking de lojas.</p>
+      </div>
+      <div class="card">
+        <h3>Automação de Relatórios de Indicadores</h3>
+        <p>Uso de Python e Power BI para geração automatizada de relatórios semanais com envio por e-mail.</p>
+      </div>
+    </section>
 
-  <footer>
-    <p>© 2025 Lucas Padilha · <a href="mailto:lucas@email.com">lucas@email.com</a></p>
-  </footer>
+    <footer>
+      <p>© 2025 Lucas Padilha · <a href="mailto:lucas@email.com">lucas@email.com</a></p>
+    </footer>
+  </div>
 </body>
 </html>
