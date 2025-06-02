@@ -1,126 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lucas Padilha Gonçalves Mendonça | Portfólio</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Arial Black', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f4f4;
-      color: #111827;
-    }
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100vh;
-      width: 60px;
-      background-color: #1f2937;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-top: 1rem;
-      z-index: 1000;
-    }
-    nav a {
-      display: block;
-      margin: 1.2rem 0;
-      color: #ffffff;
-      text-decoration: none;
-      font-size: 1.6rem;
-    }
-    nav a:hover {
-      color: #9ca3af;
-    }
-    .main {
-      margin-left: 60px;
-      display: flex;
-      height: 100vh;
-      align-items: center;
-      justify-content: center;
-      background: url("file-9d23P33GVGUkCmxWWCsG5N") no-repeat center center;
-      background-size: cover;
-      text-align: center;
-    }
-    .main-content {
-      background-color: rgba(255, 255, 255, 0.8);
-      padding: 3rem;
-      border-radius: 12px;
-    }
-    .main-content h1 {
-      font-size: 3.5rem;
-      margin-bottom: 1rem;
-      color: #111827;
-    }
-    .main-content p {
-      font-size: 1.5rem;
-      color: #1f2937;
-    }
-    .overlay {
-      padding: 4rem 2rem 2rem 80px;
-    }
-    section {
-      max-width: 960px;
-      margin: 3rem auto;
-      padding: 0 1rem;
-    }
-    h2 {
-      font-size: 2.2rem;
-      margin-bottom: 1.2rem;
-      color: #111827;
-      border-bottom: 2px solid #e5e7eb;
-      padding-bottom: 0.5rem;
-    }
-    .sobre-container {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: flex-start;
-      gap: 2rem;
-    }
-    .sobre-container img {
-      width: 220px;
-      border-radius: 10px;
-    }
-    ul {
-      list-style: disc;
-      padding-left: 1.5rem;
-      font-size: 1.1rem;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      color: #6b7280;
-    }
-    a { color: #1f2937; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    form input, form textarea {
-      width: 100%; padding: 0.85rem; margin-bottom: 1rem; border: 1px solid #d1d5db; border-radius: 6px; font-size: 1rem;
-    }
-    form button {
-      background-color: #1f2937; color: white; padding: 0.85rem 1.5rem;
-      border: none; border-radius: 6px; cursor: pointer; font-size: 1rem;
-    }
-    form button:hover {
-      background-color: #374151;
-    }
-  </style>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <nav>
-    <a href="#main" title="Início"><i class="fas fa-home"></i></a>
-    <a href="#sobre" title="Sobre"><i class="fas fa-user"></i></a>
-    <a href="#resumo" title="Resumo"><i class="fas fa-file-alt"></i></a>
-    <a href="#portfolio" title="Portfólio"><i class="fas fa-chart-bar"></i></a>
-    <a href="#servicos" title="Serviços"><i class="fas fa-cogs"></i></a>
-    <a href="#contato" title="Contato"><i class="fas fa-envelope"></i></a>
-  </nav>
 
-  <div class="main" id="main">
-    <div class="main-content">
-      <h1>Lucas Padilha</h1>
-      <p>Especialista em Análise de Dados | Analista de TI</p>
-    </div>
-  </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Padilha - Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Lucas Padilha G Mendonça</h1>
+            <p>Especialista em Análise de Dados e Analista de TI</p>
+        </div>
+    </header>
+
+    <section id="sobre-mim">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <img src="473297405_2899175486905919_7196750505444973053_n.jpg" alt="Lucas Padilha">
+            <p>
+                Profissional de TI com 2 anos de experiência em suporte Help Desk, manutenção de hardware e software,
+                gerenciamento de usuários em ambiente de servidor, administração de bancos de dados MySQL e Oracle, além de
+                atuação em sistemas ERP. Possuo experiência no desenvolvimento de relatórios personalizados utilizando Crystal
+                Reports XI e Power BI.
+            </p>
+            <p>
+                Minha experiência inclui atendimento a usuários, resolução de problemas técnicos, administração e otimização de
+                bancos de dados, implementação e suporte a sistemas, gestão de servidores e redes, telefonia e Active Directory,
+                configuração de ambientes corporativos (Office) e capacitação de equipes em novas tecnologias. Tenho foco na
+                melhoria de processos e na experiência do usuário.
+            </p>
+            <p>
+                Sou formado em Ensino Médio pelo Espaço Anglo (2019-2021) e estou cursando Engenharia da Computação na
+                Unilago (2022-2026). Além disso, possuo cursos de Suporte Técnico na Prática, Banco de Dados Oracle SQL E
+                PL/SQL, Informática do Básico ao Avançado, Redes de Computadores Completo, PDCA, Organização Pessoal,
+                Power BI Completo e Crystal Reports XI.
+            </p>
+            <p>
+                Minhas habilidades abrangem suporte e treinamento, redes e infraestrutura, e manutenção e desenvolvimento.
+                Tenho experiência em ferramentas como Sistema ERP, MySQL, SQL Server, Oracle, Power BI, Crystal Reports XI,
+                N8N, Spark, Zabbix, Grafana e Glpi.
+            </p>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2>Portfólio</h2>
+            <div class="projeto">
+                <img src="Gestão Financeira.png" alt="Dashboard de Gestão Financeira">
+                <h3>Dashboard de Gestão Financeira</h3>
+                <p>
+                    Descrição do projeto de Gestão Financeira.
+                </p>
+            </div>
+            <div class="projeto">
+                <img src="Screenshot_5.jpg" alt="Dashboard de Gestão de Vendas">
+                <h3>Dashboard de Gestão de Vendas</h3>
+                <p>
+                    Descrição do projeto de Gestão de Vendas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>
+                **Email:** ti.lucaspmendonca@gmail.com
+            </p>
+            <p>
+                **Telefone:** (17) 99154-1134
+            </p>
+            <p>
+                **Localização:** Mirassol - SP
+            </p>
+            </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Lucas Padilha. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
